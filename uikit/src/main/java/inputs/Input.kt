@@ -48,10 +48,10 @@ fun Input(
         outputTransformation = outputTransformation,
         decorator = { innerTextField ->
             Column(
-                modifier.fillMaxWidth()
+                modifier = modifier.fillMaxWidth()
             ) {
                 Box(
-                    modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth()
                 ) {
                     if (state.text.isEmpty() && placeholder != null) {
                         Text(
@@ -61,9 +61,9 @@ fun Input(
                     }
                     innerTextField()
                 }
-                Spacer(modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(8.dp))
                 Box(
-                    modifier
+                    modifier = Modifier
                         .fillMaxWidth()
                         .height(1.dp)
                         .background(

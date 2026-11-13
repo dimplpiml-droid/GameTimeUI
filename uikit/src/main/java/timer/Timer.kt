@@ -33,7 +33,7 @@ fun Timer(
     seconds: Int
     ) {
     Box(
-        modifier = Modifier
+        modifier = modifier
             .width(295.dp)
             .height(100.dp)
             .clip(RoundedCornerShape(10.dp))

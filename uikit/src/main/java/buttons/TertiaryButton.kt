@@ -34,7 +34,7 @@ fun TertiaryButton(
     onClick: () -> Unit
 ){
     Row(
-        modifier.clickable(
+        modifier = modifier.clickable(
             onClick = onClick,
             interactionSource = null,
             indication = null
@@ -47,7 +47,7 @@ fun TertiaryButton(
                 imageVector = icon,
                 contentDescription = null,
                 tint = GameTimeTheme.ColorScheme.accentInActive,
-                modifier = modifier.size(18.dp)
+                modifier = Modifier.size(18.dp)
             )
         }
         Text(

@@ -58,14 +58,14 @@ fun PasswordInput(
         textStyle = GameTimeTheme.Typography.caption2Regular,
         decorator = { innerTextField ->
             Column(
-                modifier.fillMaxWidth()
+                modifier = modifier.fillMaxWidth()
             ) {
                 Row(
                     modifier.fillMaxWidth(),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Box(
-                        modifier.weight(1f)
+                        modifier = Modifier.weight(1f)
                     ) {
                         if (state.text.isEmpty() && placeholder != null) {
                             Text(
@@ -78,7 +78,7 @@ fun PasswordInput(
                     Icon(
                         painter = painterResource(R.drawable.visibility),
                         contentDescription = null,
-                        modifier
+                        modifier = Modifier
                             .clickable(
                                 interactionSource = remember { MutableInteractionSource() },
                                 indication = ripple(bounded = false),
@@ -88,9 +88,9 @@ fun PasswordInput(
                             .size(width = 12.dp, height = 8.dp),
                     )
                 }
-                Spacer(modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(8.dp))
                 Box(
-                    modifier.fillMaxWidth()
+                    modifier = Modifier.fillMaxWidth()
                         .height(1.dp)
                         .background(Brush.horizontalGradient(GameTimeTheme.ColorScheme.accent))
                 )

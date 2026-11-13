@@ -27,7 +27,7 @@ fun CheckBox(
     onClick: () -> Unit
 ) {
     Icon(
-        modifier = Modifier
+        modifier = modifier
             .size(14.dp)
             .clickable(
                 onClick = onClick,

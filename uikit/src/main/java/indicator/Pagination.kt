@@ -27,11 +27,12 @@ fun Pagination(
     currentPage: Int
 ) {
     Row(
+        modifier = modifier,
         horizontalArrangement = Arrangement.spacedBy(10.dp)
     ) {
         repeat(countPage) { index ->
             Box(
-                modifier
+                modifier = Modifier
                     .alpha(
                         alpha = if (index == currentPage) 1f else 0.35f
                     )
