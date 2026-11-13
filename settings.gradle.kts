@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "GameTimeUI"
 include(":app")
- 
+include(":uikit")
