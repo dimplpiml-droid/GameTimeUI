@@ -12,12 +12,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.graphics.painter.BrushPainter
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import ru.example.uikit.ui.theme.GameTimeColorScheme
 import ru.example.uikit.ui.theme.GameTimeTheme
 
 /**
@@ -27,7 +25,7 @@ import ru.example.uikit.ui.theme.GameTimeTheme
  * @param onClick действие при нажатии
  */
 @Composable
-fun PrimiaryBuuton(
+fun PrimaryButton(
     modifier: Modifier = Modifier,
     label: String,
     onClick: () -> Unit
@@ -58,8 +56,8 @@ fun PrimiaryBuuton(
 
 @Preview(showBackground = true)
 @Composable
-fun PrimiaryBuutonPreview() {
-    PrimiaryBuuton(
+fun PrimaryButtonPreview() {
+    PrimaryButton(
         modifier = Modifier,
         label = "Lets Combat",
         onClick = {}

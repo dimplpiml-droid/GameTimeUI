@@ -90,9 +90,14 @@ fun PasswordInput(
                 }
                 Spacer(modifier = Modifier.height(8.dp))
                 Box(
-                    modifier = Modifier.fillMaxWidth()
+                    modifier = Modifier
+                        .fillMaxWidth()
                         .height(1.dp)
-                        .background(Brush.horizontalGradient(GameTimeTheme.ColorScheme.accent))
+                        .background(
+                            Brush.horizontalGradient(
+                                GameTimeTheme.ColorScheme.accent
+                            )
+                        )
                 )
             }
         }
@@ -102,8 +107,9 @@ fun PasswordInput(
 
 @Preview(showBackground = true)
 @Composable
-fun PasswordInputPreview(){
-    PasswordInput(modifier = Modifier,
+fun PasswordInputPreview() {
+    PasswordInput(
+        modifier = Modifier,
         state = rememberTextFieldState(),
         isPasswordVisibility = true,
         onTogglePasswordVisibility = {},
